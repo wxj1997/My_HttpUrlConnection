@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void showGetData() {
-        HttpUtil.requestGet(new CallBack() {
+        HttpUtil.requestGet(new CallBack<String>() {
             @Override
             public void onResponse(String response) {
                 Message msg=mHandler.obtainMessage();
